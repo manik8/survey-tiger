@@ -2,37 +2,81 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  cursor: pointer;
+}
+
+.header-survey {
+  font-size: 40px;
+  padding: 10px;
+  color: #59b22d;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.btn-survey {
+  text-decoration: none;
+  border: solid 1px #af6047;
+  padding: 20px;
+  font-size: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  outline: none;
   color: white;
+  background: #af6047;
 }
 
-.App-link {
-  color: #61dafb;
+.selected-value {
+  width: 15%;
+  height: 40px;
+  background: #efefef;
+  font-size: 30px;
+  outline: none;
+  margin-top: 20px;
+}
+.multi-select:hover {
+  background: yellow;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-question {
+  display: flex;
+  justify-content: center;
+  height: 43px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.question-mark {
+  border: 1px solid;
+  padding: 10px;
+  background: #efefef;
+  height: 22px;
+}
+
+.question {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.option-survey {
+  height: 30px;
+  font-size: 16px;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.options {
+  border: 1px solid;
+  padding: 3px 10px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #af6047;
 }
